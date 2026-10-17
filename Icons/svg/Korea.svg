@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="96" viewBox="0 0 144 96">
+  <rect width="144" height="96" fill="#fff"/>
+  <g transform="translate(72 48)">
+    <g stroke="#000" stroke-width="4" fill="none">
+      <g transform="rotate(33.69006752598)">
+        <path d="M-50-12V12M-44-12V12M-38-12V12"/>
+        <path d="M38-12V-1M38 1V12M44-12V-1M44 1V12M50-12V-1M50 1V12"/>
+      </g>
+      <g transform="rotate(-33.69006752598)">
+        <path d="M-50-12V12M-44-12V-1M-44 1V12M-38-12V12"/>
+        <path d="M38-12V-1M38 1V12M44-12V12M50-12V-1M50 1V12"/>
+      </g>
+    </g>
+    <g transform="rotate(33.69006752598)">
+      <circle r="24" fill="#0047a0"/>
+      <path fill="#cd2e3a" d="M-24 0A24 24 0 0 1 24 0A12 12 0 0 0 0 0A12 12 0 0 1-24 0Z"/>
+    </g>
+  </g>
+</svg>
