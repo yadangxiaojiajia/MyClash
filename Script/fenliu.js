@@ -183,7 +183,7 @@ const regionDefinitions = [
     name: '韩国',
     flag: '🇰🇷',
     regex: /🇰🇷|韩国|首尔|釜山|(?<![A-Za-z])KO?R(?![A-Za-z])|(?<!north )korea/i,
-    icon: `${iconBaseUrl}Korea.svg`,
+    icon: `${iconBaseUrl}KoreaTile.svg`,
   },
 ];
 
