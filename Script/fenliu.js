@@ -1,8 +1,8 @@
 /**
  * mihomo配置覆写脚本（全量版）
  * 作者：AIsouler
- * 源仓库：https://github.com/AIsouler/MyClash
- * 脚本链接：https://raw.githubusercontent.com/AIsouler/MyClash/main/Script/mihomoScript.js
+ * 源仓库：https://github.com/yadangxiaojiajia/MyClash
+ * 脚本链接：https://raw.githubusercontent.com/yadangxiaojiajia/MyClash/main/Script/mihomoScript.js
  * 友情推荐，非常好用、省电且内存占用低的代理软件：https://github.com/appshubcc/Bettbox
  */
 
@@ -141,7 +141,7 @@ const directProxies = [
 ];
 
 // 图标 URL 公共前缀
-const iconBaseUrl = 'https://cdn.jsdmirror.com/gh/AIsouler/MyClash@main/Icons/svg/';
+const iconBaseUrl = 'https://cdn.jsdmirror.com/gh/yadangxiaojiajia/MyClash@main/Icons/svg/';
 
 // 规则集 URL 公共前缀
 const ruleSetBaseUrl = 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/';
@@ -183,7 +183,7 @@ const regionDefinitions = [
     name: '韩国',
     flag: '🇰🇷',
     regex: /🇰🇷|韩国|首尔|釜山|(?<![A-Za-z])KO?R(?![A-Za-z])|(?<!north )korea/i,
-    icon: `${iconBaseUrl}WorldMap.svg`,
+    icon: `${iconBaseUrl}Korea.svg`,
   },
 ];
 
