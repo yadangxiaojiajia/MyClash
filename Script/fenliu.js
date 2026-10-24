@@ -335,10 +335,26 @@ const selectBaseOption = {
   type: 'select',
 };
 
+/**
+ * 自动选择（url-test）健康检查间隔
+ *
+ * 'manual' = 手动模式：不定时测速，只有客户端手动测速/点击该组时才重新选最快节点。
+ * 秒数     = 按该秒数定时测速（原行为为 600）。
+ *
+ * 说明：mihomo 对非 select/relay 组会把 interval: 0 强制改成 300
+ * （见 adapter/outboundgroup/parser.go），无法真正关闭定时测速，
+ * 因此手动模式用「365 天」作为等效值，配合 lazy: true 使组未被使用时直接跳过检查。
+ * 节点真的失联时仍会由 max-failed-times 触发的健康检查兜底，不会卡死不切换。
+ */
+const autoSelectInterval = 'manual';
+const autoSelectIntervalSeconds =
+  autoSelectInterval === 'manual' ? 365 * 24 * 60 * 60 : autoSelectInterval;
+
 // url-test策略组通用配置
 const urlTestBaseOption = {
   ...groupBaseOption,
   type: 'url-test',
+  interval: autoSelectIntervalSeconds,
   tolerance: 50,
   'exclude-type': 'DIRECT',
   icon: `${iconBaseUrl}Auto.svg`,
